@@ -1,1 +1,100 @@
 @import url("./global.css");
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 29px 0;
+
+  .title {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 24px;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+
+    li {
+      color: var(--title-dark);
+
+      &#this {
+        background: var(--gradient-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      input {
+        display: none;
+
+        & + label {
+          background-repeat: no-repeat;
+          background-image: url("../assets/LightTheme.png");
+        }
+
+        &:checked + label {
+          background-repeat: no-repeat;
+          background-image: url("../assets/DarkTheme.png");
+        }
+      }
+
+      label {
+        cursor: pointer;
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+Footer {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0;
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 32px;
+    color: var(--container-light);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      max-width: 200px;
+      img {
+        margin-bottom: 40px;
+      }
+    }
+    .right {
+      display: flex;
+      gap: 72px;
+    }
+    .social-box {
+      display: flex;
+      gap: 32px;
+      img {
+        width: 24px;
+      }
+    }
+    .copy {
+      font-size: 13px;
+    }
+  }
+
+  hr {
+    margin: 48px 0;
+  }
+}
