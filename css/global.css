@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 1156px;
+  margin: 0 auto;
+  background-color: var(--body-dark);
+
+  color: var(--text-dark);
+}
+
+:root {
+  --body-dark: #14092a;
+  --container-dark: #372a51;
+  --text-dark: #a094b8;
+  --title-dark: #d1c0f1;
+}
