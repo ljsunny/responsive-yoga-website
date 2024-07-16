@@ -16,11 +16,14 @@ body {
 
 body:has(input[type="checkbox"]:checked) {
   background-color: var(--body-light);
-
   color: var(--text-light);
-
+  
   .light-title {
     color: var(--title-light);
+  }
+  
+  .light-bg {
+    background-color: var(--first-color-dark);
   }
 }
 
@@ -54,14 +57,17 @@ a {
 
 :root {
   --gradient-color: linear-gradient(to right, #ff52af 0%, #9f53ff 100%);
-
   --body-light: #f5f0ff;
   --container-light: #ffffff;
   --text-light: #4b3e65;
   --title-light: #220953;
+  --first-color-dark: #1E0849;
 
   --body-dark: #14092a;
   --container-dark: #372a51;
   --text-dark: #a094b8;
   --title-dark: #d1c0f1;
+
+  --footer-text: #a197b4;
+  --color-white: #ffffff;
 }
