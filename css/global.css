@@ -13,10 +13,19 @@ body {
 
   color: var(--text-dark);
 }
-body:has(input[type=checkbox]:checked){
-  background-color: white;
+
+body:has(input[type="checkbox"]:checked) {
+  background-color: var(--body-light);
+
+  color: var(--text-light);
 }
+
 :root {
+  --body-light: #f5f0ff;
+  --container-light: #ffffff;
+  --text-light: #4b3e65;
+  --title-light: #220953;
+
   --body-dark: #14092a;
   --container-dark: #372a51;
   --text-dark: #a094b8;
