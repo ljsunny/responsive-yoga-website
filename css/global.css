@@ -7,8 +7,6 @@
 }
 
 body {
-  width: 1156px;
-  margin: 0 auto;
   background-color: var(--body-dark);
 
   color: var(--text-dark);
@@ -18,6 +16,11 @@ body:has(input[type="checkbox"]:checked) {
   background-color: var(--body-light);
 
   color: var(--text-light);
+}
+
+.wrapper {
+  width: 1156px;
+  margin: 0 auto;
 }
 
 :root {
