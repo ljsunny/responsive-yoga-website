@@ -14,8 +14,38 @@ body {
 
 body:has(input[type="checkbox"]:checked) {
   background-color: var(--body-light);
-
   color: var(--text-light);
+  
+  .light-title {
+    color: var(--title-light);
+  }
+  
+  .light-bg {
+    background-color: var(--first-color-dark);
+  }
+}
+
+input {
+  border: none;
+}
+
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+.font-lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
 }
 
 .wrapper {
@@ -24,58 +54,18 @@ body:has(input[type="checkbox"]:checked) {
 }
 
 :root {
+  --gradient-color: linear-gradient(to right, #ff52af 0%, #9f53ff 100%);
   --body-light: #f5f0ff;
   --container-light: #ffffff;
   --text-light: #4b3e65;
   --title-light: #220953;
+  --first-color-dark: #1E0849;
 
   --body-dark: #14092a;
   --container-dark: #372a51;
   --text-dark: #a094b8;
   --title-dark: #d1c0f1;
-}
-Footer {
-  display:flex;
-  flex-direction:column;
-  padding: 64px 0;
-  
-  p {
-    font-size: 16px;
-    line-height:1.5;
-  }
 
-  h2 {
-    font-size: 24px;
-    margin-bottom: 32px;
-    color: var(--container-light);
-  }
-
-  .container {
-    display:flex;
-    justify-content: space-between;
-    .left {
-      max-width: 200px;
-      img {
-        margin-bottom: 40px;
-      }
-    }
-    .right {
-      display:flex;
-      gap: 72px;
-    }
-    .social-box {
-      display: flex;
-      gap:32px;
-      img {
-        width:24px;
-      }
-    }
-    .copy {
-      font-size: 13px;
-    }
-  }
-
-  hr {
-    margin: 48px 0;
-  }
+  --footer-text: #a197b4;
+  --color-white: #ffffff;
 }
