@@ -34,3 +34,48 @@ body:has(input[type="checkbox"]:checked) {
   --text-dark: #a094b8;
   --title-dark: #d1c0f1;
 }
+Footer {
+  display:flex;
+  flex-direction:column;
+  padding: 64px 0;
+  
+  p {
+    font-size: 16px;
+    line-height:1.5;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 32px;
+    color: var(--container-light);
+  }
+
+  .container {
+    display:flex;
+    justify-content: space-between;
+    .left {
+      max-width: 200px;
+      img {
+        margin-bottom: 40px;
+      }
+    }
+    .right {
+      display:flex;
+      gap: 72px;
+    }
+    .social-box {
+      display: flex;
+      gap:32px;
+      img {
+        width:24px;
+      }
+    }
+    .copy {
+      font-size: 13px;
+    }
+  }
+
+  hr {
+    margin: 48px 0;
+  }
+}
