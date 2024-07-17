@@ -14,7 +14,7 @@ body {
   color: var(--text-dark);
 }
 
-body:has(input[type="checkbox"]:checked) {
+body:has(#theme-toggle:checked) {
   background-color: var(--body-light);
   color: var(--text-light);
 
@@ -29,15 +29,15 @@ body:has(input[type="checkbox"]:checked) {
   .light-container {
     background-color: var(--container-light);
   }
-  
+
   .light-border {
     border: 10px solid var(--container-light);
   }
-  
+
   .light-body-border {
     border: 10px solid var(--body-light);
   }
-  
+
   .light-span-bg {
     background-color: var(--white-color);
   }
