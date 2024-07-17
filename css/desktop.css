@@ -168,9 +168,72 @@
   }
 }
 
+.section3-container {
+  padding: 48px 0;
+  .flex-container {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 32px;
+  }
+  h1 {
+    font-size:64px;
+    color: var(--title-dark);
+    font-weight: normal;
+    margin-bottom:40px;
+  }
+  p {
+    margin-bottom:32px;
+  }
+  button {
+    padding: 16px 28px;
+    background-image:var(--gradient-color);
+    border-radius: 64px;
+    color: var(--white-color);
+  }
+  .left{
+    position: relative;
+  }
+  .marker {
+    display:flex;
+    position: absolute;
+    background-color: var(--container-dark);
+    padding: 9px 12px;
+    border-radius: 12px;
+
+    img {
+      width: 50px;
+      margin-right: 8px;
+    }
+    p {
+      margin: 0;
+    }
+    .txt-gradient {
+      background: var(--gradient-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .marker:nth-child(1) {
+    flex-direction: row;
+    top:72px;
+    left:8px;
+  }
+  .marker:nth-child(2) {
+    flex-direction: column;
+    bottom:32px;
+    right:31px;
+  }
+}
 .section4-container {
   padding: 48px 0;
 
+  .flex-container {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 74px;
+  }
   h1 {
       font-size:64px;
       color: var(--title-dark);
@@ -191,7 +254,7 @@
     border: 10px solid var(--body-dark);
     border-radius:192px;
 
-    span {
+    .marker{
       display:flex;
       align-items: center;
       position: absolute;
@@ -209,40 +272,33 @@
       }
     }
   }
-  .flex-container {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap: 74px;
-    
-    .img-wrap {
-      max-width: 570px;
+  .img-wrap {
+    max-width: 570px;
 
-      .yoga-img:nth-child(1) {
-        width: 500px;
-        height:343.75px;
-        position:relative;
-        background-image: url("../assets/routine-yoga-1.png");
-        background-size:cover;
-        z-index:2;
-        span {
-          top: 56px;
-          right:-38px;
-        }
+    .yoga-img:nth-child(1) {
+      width: 500px;
+      height:343.75px;
+      position:relative;
+      background-image: url("../assets/routine-yoga-1.png");
+      background-size:cover;
+      z-index:2;
+      .marker {
+        top: 56px;
+        right:-38px;
       }
-      .yoga-img:nth-child(2) {
-        width: 500px;
-        height:343.75px;
-        position:relative;
-        background-image: url("../assets/routine-yoga-2.png");
-        background-size:cover;
-        margin-top: calc(232px - 343.72px);
-        margin-left:70px;
-        z-index:1;
-        span {
-          bottom: 56px;
-          left:-48px;
-        }
+    }
+    .yoga-img:nth-child(2) {
+      width: 500px;
+      height:343.75px;
+      position:relative;
+      background-image: url("../assets/routine-yoga-2.png");
+      background-size:cover;
+      margin-top: calc(232px - 343.72px);
+      margin-left:70px;
+      z-index:1;
+      .marker {
+        bottom: 56px;
+        left:-48px;
       }
     }
   }

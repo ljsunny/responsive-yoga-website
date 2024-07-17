@@ -37,6 +37,10 @@ body:has(input[type="checkbox"]:checked) {
   .light-body-border {
     border: 10px solid var(--body-light);
   }
+  
+  .light-span-bg {
+    background-color: var(--white-color);
+  }
 }
 
 input {
