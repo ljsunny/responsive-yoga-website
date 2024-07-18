@@ -1,6 +1,7 @@
 @media screen and (max-width: 376px) {
-  body {
-    padding: 0 24px;
+  .header,
+  main {
+    margin: 0 24px;
   }
 
   section {
@@ -14,16 +15,21 @@
   }
 
   .wrapper {
-    width: 100%;
-    margin: 0 auto;
+    width: -webkit-fill-available;
   }
 
   .header {
     padding: 15px 0;
 
     .navigation {
+      gap: 20px;
+
       .menu {
         display: none;
+      }
+
+      .mobile {
+        display: block;
       }
     }
   }
@@ -218,7 +224,7 @@
     .yoga-txt-container {
       padding-top: 0;
       button {
-        margin-top:24px;
+        margin-top: 24px;
       }
     }
     .yoga-container {
@@ -229,22 +235,22 @@
       .yoga-img-wrap:nth-child(1) {
         width: 140px;
         height: 210px;
-        top:267px;
+        top: 267px;
       }
       .yoga-img-wrap:nth-child(2) {
         width: 140px;
         height: 210px;
-        top:307px;
+        top: 307px;
       }
       .yoga-img-wrap:nth-child(3) {
         width: 230px;
         height: 117px;
-        top:544.76px;
+        top: 544.76px;
       }
       .yoga-img-wrap:nth-child(4) {
         width: 230px;
         height: 117px;
-        top:699.96px;
+        top: 699.96px;
       }
 
       .yoga-img-wrap:nth-child(even) {
@@ -267,21 +273,72 @@
 
     input {
       width: 100%;
+
+      padding: 16px 28px;
+    }
+
+    .input-wrap {
+      position: relative;
+
+      width: 258px;
+
+      button {
+        position: absolute;
+        top: 112px;
+        right: 0;
+
+        width: 258px;
+        padding: 16px 0;
+      }
     }
 
     .box {
       height: 100%;
-      padding: 48px 35px;
+      padding: 48px 35px 116px;
     }
   }
 
   footer {
+    padding: 64px 20px;
+
+    p {
+      font-size: 15px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+
+      font-size: 20px;
+    }
+
+    hr {
+      margin: 40px 0;
+    }
+
     .container {
       flex-direction: column;
+
+      .left {
+        img {
+          margin-bottom: 20px;
+        }
+      }
 
       .right {
         flex-direction: column;
         gap: 40px;
+
+        margin-top: 40px;
+      }
+
+      .social-box {
+        justify-content: center;
+      }
+
+      .copy {
+        margin-top: 40px;
+
+        text-align: center;
       }
     }
   }

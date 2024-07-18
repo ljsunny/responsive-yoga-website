@@ -20,7 +20,7 @@
     <title>Yoga</title>
   </head>
 
-  <body>
+  <body class="toggle-body">
     <header class="header wrapper">
       <span class="title font-lora">Yoga</span>
       <ul class="navigation">
@@ -29,9 +29,20 @@
         <li class="menu light-title"><a href="#">Routine</a></li>
         <li class="menu light-title"><a href="#">Follow</a></li>
         <li class="light-title">
-          <input id="theme-toggle" type="checkbox" /><label
+          <input class="theme" id="theme-toggle" type="checkbox" /><label
             for="theme-toggle"
           ></label>
+        </li>
+        <li class="mobile light-title">
+          <input class="modal" id="hamburger-toggle" type="checkbox" />
+          <label for="hamburger-toggle" class="modal-class"></label>
+          <div class="light-burger modal-wrapper">
+            <label for="hamburger-toggle" class="in-modal-class"></label>
+            <div id="modal-home">Home</div>
+            <div>Health</div>
+            <div>Place</div>
+            <div>Follow</div>
+          </div>
         </li>
       </ul>
     </header>
