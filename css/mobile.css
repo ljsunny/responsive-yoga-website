@@ -1,0 +1,277 @@
+@media screen and (max-width: 376px) {
+  body {
+    padding: 0 24px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & + & {
+      margin-bottom: 64px;
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header {
+    padding: 15px 0;
+
+    .navigation {
+      .menu {
+        display: none;
+      }
+    }
+  }
+
+  .section1-container {
+    margin-top: 40px;
+
+    h1 {
+      font-size: 44px;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .start-btn {
+      padding: 16px 28px;
+    }
+
+    .yoga-amount {
+      gap: 51px;
+
+      margin-top: 32px;
+
+      .amount {
+        font-size: 28px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 0;
+      }
+    }
+
+    .star-img {
+      right: 260px;
+      top: 130px;
+      width: 50px;
+    }
+
+    .home-img {
+      position: initial;
+
+      width: 320px;
+      margin-top: 32px;
+    }
+  }
+
+  .section2-container {
+    margin-top: 32px;
+
+    .number {
+      margin-right: 28px;
+
+      font-size: 28px;
+    }
+
+    .yoga-img-wrapper {
+      width: 230px;
+      height: 100px;
+
+      img {
+        width: 180px;
+      }
+    }
+
+    .content {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 46px;
+
+      text-align: center;
+
+      img {
+        left: -13px;
+      }
+    }
+
+    .next-btn {
+      margin-top: 32px;
+    }
+  }
+
+  .section3-container {
+    h1 {
+      margin-bottom: 0;
+
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .flex-container {
+      flex-direction: column-reverse;
+
+      .left {
+        .health-fitness {
+          width: 320px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+
+        .marker {
+          img {
+            width: 36px;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          margin-top: 24px;
+
+          font-size: 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .section4-container {
+    h1 {
+      margin-bottom: 24px;
+
+      font-size: 32px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .flex-container {
+      flex-direction: column;
+
+      .txt-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .yoga-img {
+      .marker {
+        img {
+          width: 24px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .img-wrap {
+      .yoga-img:nth-child(1) {
+        width: 250px;
+        height: 171px;
+
+        .marker {
+          top: 20px;
+          right: -50px;
+        }
+      }
+
+      .yoga-img:nth-child(2) {
+        width: 250px;
+        height: 171px;
+        margin-top: calc(232px - 300px);
+
+        .marker {
+          bottom: 23px;
+          left: -52px;
+        }
+      }
+    }
+  }
+
+  .section5-container {
+    display: none;
+
+    .yoga-container {
+      .yoga-img-wrap {
+        border: 5px solid var(--container-dark);
+      }
+
+      .yoga-img-wrap:nth-child(1) {
+        width: 140px;
+        height: 210px;
+      }
+      .yoga-img-wrap:nth-child(2) {
+        width: 140px;
+        height: 210px;
+      }
+      .yoga-img-wrap:nth-child(3) {
+        width: 230px;
+        height: 117px;
+      }
+      .yoga-img-wrap:nth-child(4) {
+        width: 230px;
+        height: 117px;
+      }
+
+      .yoga-img-wrap:nth-child(even) {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .section6-container {
+    h1 {
+      margin-bottom: 15px;
+
+      font-size: 28px;
+      font-weight: normal;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    .box {
+      height: 100%;
+      padding: 48px 35px;
+    }
+  }
+
+  footer {
+    .container {
+      flex-direction: column;
+
+      .right {
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+  }
+}

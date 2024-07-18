@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
     <title>Yoga</title>
   </head>
 
@@ -23,10 +24,10 @@
     <header class="header wrapper">
       <span class="title font-lora">Yoga</span>
       <ul class="navigation">
-        <li class="light-title" id="this"><a href="#">Home</a></li>
-        <li class="light-title"><a href="#">Health</a></li>
-        <li class="light-title"><a href="#">Routine</a></li>
-        <li class="light-title"><a href="#">Follow</a></li>
+        <li class="menu light-title" id="this"><a href="#">Home</a></li>
+        <li class="menu light-title"><a href="#">Health</a></li>
+        <li class="menu light-title"><a href="#">Routine</a></li>
+        <li class="menu light-title"><a href="#">Follow</a></li>
         <li class="light-title">
           <input id="theme-toggle" type="checkbox" /><label
             for="theme-toggle"
@@ -62,16 +63,18 @@
         <img class="home-img" src="./assets/HomeYoga.png" alt="home-yoga" />
       </section>
       <section class="wrapper section2-container">
-        <div class="font-lora number">#01</div>
-        <div class="light-container yoga-img-wrapper">
-          <img src="./assets/ListYoga.png" alt="list-yoga" />
+        <div class="yoga">
+          <div class="font-lora number">#01</div>
+          <div class="light-container yoga-img-wrapper">
+            <img src="./assets/ListYoga.png" alt="list-yoga" />
+          </div>
         </div>
         <div class="content">
           Get a list of specific influencers in your niche at your fingertips so
           you can focus on managing your status.
           <img src="./assets/LittleStars.png" alt="little-stars" />
         </div>
-        <img src="./assets/NextBtn.png" alt="next-btn" />
+        <img class="next-btn" src="./assets/NextBtn.png" alt="next-btn" />
       </section>
       <section class="wrapper section3-container">
         <div class="flex-container">
@@ -88,6 +91,7 @@
               <p>Free Courses</p>
             </div>
             <img
+              class="health-fitness"
               src="./assets/HealthFitness.png"
               alt="health-fitness"
               srcset=""
@@ -131,7 +135,7 @@
             <div class="yoga-img light-body-border">
               <span class="marker light-span-bg">
                 <img src="./assets/ri_run-fill.png" />
-                <p>High Quality Video</p>
+                <p>Professional Trainer</p>
               </span>
             </div>
           </div>

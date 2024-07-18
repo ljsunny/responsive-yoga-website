@@ -138,6 +138,11 @@
     font-size: 56px;
   }
 
+  .yoga {
+    display: flex;
+    align-items: center;
+  }
+
   .yoga-img-wrapper {
     position: relative;
 
@@ -171,31 +176,31 @@
 .section3-container {
   padding: 48px 0;
   .flex-container {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 32px;
   }
   h1 {
-    font-size:64px;
+    font-size: 64px;
     color: var(--title-dark);
     font-weight: normal;
-    margin-bottom:40px;
+    margin-bottom: 40px;
   }
   p {
-    margin-bottom:32px;
+    margin-bottom: 32px;
   }
   button {
     padding: 16px 28px;
-    background-image:var(--gradient-color);
+    background-image: var(--gradient-color);
     border-radius: 64px;
     color: var(--white-color);
   }
-  .left{
+  .left {
     position: relative;
   }
   .marker {
-    display:flex;
+    display: flex;
     position: absolute;
     background-color: var(--container-dark);
     padding: 9px 12px;
@@ -216,46 +221,46 @@
   }
   .marker:nth-child(1) {
     flex-direction: row;
-    top:72px;
-    left:8px;
+    top: 72px;
+    left: 8px;
   }
   .marker:nth-child(2) {
     flex-direction: column;
-    bottom:32px;
-    right:31px;
+    bottom: 32px;
+    right: 31px;
   }
 }
 .section4-container {
   padding: 48px 0;
 
   .flex-container {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 74px;
   }
   h1 {
-      font-size:64px;
-      color: var(--title-dark);
-      font-weight: normal;
-      margin-bottom:40px;
+    font-size: 64px;
+    color: var(--title-dark);
+    font-weight: normal;
+    margin-bottom: 40px;
   }
 
   p {
-    margin-bottom:32px;
+    margin-bottom: 32px;
   }
   button {
     padding: 16px 28px;
-    background-image:var(--gradient-color);
+    background-image: var(--gradient-color);
     border-radius: 64px;
     color: var(--white-color);
   }
   .yoga-img {
     border: 10px solid var(--body-dark);
-    border-radius:192px;
+    border-radius: 192px;
 
-    .marker{
-      display:flex;
+    .marker {
+      display: flex;
       align-items: center;
       position: absolute;
       background-color: var(--container-dark);
@@ -277,28 +282,28 @@
 
     .yoga-img:nth-child(1) {
       width: 500px;
-      height:343.75px;
-      position:relative;
+      height: 343.75px;
+      position: relative;
       background-image: url("../assets/routine-yoga-1.png");
-      background-size:cover;
-      z-index:2;
+      background-size: cover;
+      z-index: 2;
       .marker {
         top: 56px;
-        right:-38px;
+        right: -38px;
       }
     }
     .yoga-img:nth-child(2) {
       width: 500px;
-      height:343.75px;
-      position:relative;
+      height: 343.75px;
+      position: relative;
       background-image: url("../assets/routine-yoga-2.png");
-      background-size:cover;
+      background-size: cover;
       margin-top: calc(232px - 343.72px);
-      margin-left:70px;
-      z-index:1;
+      margin-left: 70px;
+      z-index: 1;
       .marker {
         bottom: 56px;
-        left:-48px;
+        left: -48px;
       }
     }
   }
@@ -309,14 +314,14 @@
 
   .yoga-txt-container {
     position: absolute;
-    top:96px;
-    left:50%;
+    top: 96px;
+    left: 50%;
     transform: translateX(-50%);
-    text-align:center;
-    max-width:600px;
+    text-align: center;
+    max-width: 600px;
 
     h1 {
-      font-size:64px;
+      font-size: 64px;
       color: var(--title-dark);
       font-weight: normal;
       span {
@@ -327,16 +332,16 @@
     }
 
     button {
-      display:flex;
-      flex-direction:column;
+      display: flex;
+      flex-direction: column;
       width: 88px;
       height: 88px;
       background-image: var(--gradient-color);
       border-radius: 64px;
-      justify-content:center;
+      justify-content: center;
       align-items: center;
       margin: 32px auto 0;
-      color:var(--white-color);
+      color: var(--white-color);
       gap: 7px;
     }
   }
@@ -345,45 +350,44 @@
     position: relative;
     display: grid;
     max-width: 1060px;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
     margin: 0 auto;
 
     .yoga-img-wrap {
-      border-radius:192px;
+      border-radius: 192px;
       border: 10px solid var(--container-dark);
     }
 
     .yoga-img-wrap:nth-child(1) {
       width: 280px;
-      height:420px;
+      height: 420px;
       background-image: url("../assets/follow-yoga-1.png");
       background-size: cover;
-
     }
     .yoga-img-wrap:nth-child(2) {
       width: 280px;
-      height:420px;
+      height: 420px;
       background-image: url("../assets/follow-yoga-2.png");
       background-size: cover;
     }
     .yoga-img-wrap:nth-child(3) {
       width: 500px;
-      height:255.58px;
+      height: 255.58px;
       background-image: url("../assets/follow-yoga-3.png");
       background-size: cover;
       transform: rotate(15deg);
     }
     .yoga-img-wrap:nth-child(4) {
       width: 500px;
-      height:255.58px;
+      height: 255.58px;
       background-image: url("../assets/follow-yoga-4.png");
       background-size: cover;
       transform: rotate(-15deg);
     }
 
     .yoga-img-wrap:nth-child(even) {
-      margin-left:auto;
+      margin-left: auto;
     }
   }
 }
