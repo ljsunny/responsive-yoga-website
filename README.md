@@ -6,6 +6,8 @@ Responsive yoga website Website. Designed by Young Kim.
 https://www.figma.com/@youngkim5
 
 Duties
+
+
 Junhyung
 
 Html markup
