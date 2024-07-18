@@ -1,4 +1,7 @@
 @media screen and (max-width: 376px) {
+  html {
+    scroll-behavior: smooth;
+  }
   .header,
   main {
     margin: 0 24px;
