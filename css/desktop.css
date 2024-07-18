@@ -310,26 +310,23 @@
 }
 
 .section5-container {
-  padding: 48px 0 96px;
+  padding: 32px 0;
 
+  h1 {
+    font-size: 64px;
+    color: var(--title-dark);
+    font-weight: normal;
+    span {
+      background: var(--gradient-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
   .yoga-txt-container {
-    position: absolute;
-    top: 96px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
+    padding-top:96px;
     text-align: center;
     max-width: 600px;
-
-    h1 {
-      font-size: 64px;
-      color: var(--title-dark);
-      font-weight: normal;
-      span {
-        background: var(--gradient-color);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    }
 
     button {
       display: flex;
@@ -348,13 +345,13 @@
 
   .yoga-container {
     position: relative;
-    display: grid;
     max-width: 1060px;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
     margin: 0 auto;
+    height:821px;
+
 
     .yoga-img-wrap {
+      position:absolute;
       border-radius: 192px;
       border: 10px solid var(--container-dark);
     }
@@ -366,12 +363,15 @@
       background-size: cover;
     }
     .yoga-img-wrap:nth-child(2) {
+      right:0;
       width: 280px;
       height: 420px;
       background-image: url("../assets/follow-yoga-2.png");
       background-size: cover;
     }
     .yoga-img-wrap:nth-child(3) {
+      bottom:20px;
+      left:0;
       width: 500px;
       height: 255.58px;
       background-image: url("../assets/follow-yoga-3.png");
@@ -379,15 +379,13 @@
       transform: rotate(15deg);
     }
     .yoga-img-wrap:nth-child(4) {
+      bottom:20px;
+      right:0;
       width: 500px;
       height: 255.58px;
       background-image: url("../assets/follow-yoga-4.png");
       background-size: cover;
       transform: rotate(-15deg);
-    }
-
-    .yoga-img-wrap:nth-child(even) {
-      margin-left: auto;
     }
   }
 }

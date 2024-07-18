@@ -212,28 +212,39 @@
   }
 
   .section5-container {
-    display: none;
-
+    h1 {
+      font-size: 32px;
+    }
+    .yoga-txt-container {
+      padding-top: 0;
+      button {
+        margin-top:24px;
+      }
+    }
     .yoga-container {
+      grid-template-columns: 1fr;
       .yoga-img-wrap {
         border: 5px solid var(--container-dark);
       }
-
       .yoga-img-wrap:nth-child(1) {
         width: 140px;
         height: 210px;
+        top:267px;
       }
       .yoga-img-wrap:nth-child(2) {
         width: 140px;
         height: 210px;
+        top:307px;
       }
       .yoga-img-wrap:nth-child(3) {
         width: 230px;
         height: 117px;
+        top:544.76px;
       }
       .yoga-img-wrap:nth-child(4) {
         width: 230px;
         height: 117px;
+        top:699.96px;
       }
 
       .yoga-img-wrap:nth-child(even) {

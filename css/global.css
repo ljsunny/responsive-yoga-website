@@ -33,7 +33,11 @@ body:has(#theme-toggle:checked) {
   .light-border {
     border: 10px solid var(--container-light);
   }
-
+  @media screen and (max-width: 376px) {
+    .light-border {
+      border: 5px solid var(--container-light);
+    }
+  }
   .light-body-border {
     border: 10px solid var(--body-light);
   }
