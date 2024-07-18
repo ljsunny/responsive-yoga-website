@@ -284,5 +284,23 @@
         gap: 40px;
       }
     }
+    .arrow-up {
+      position:fixed;
+      bottom: 50px;
+      right:20px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      width: 32px;
+      height:32px;
+      background-image:var(--gradient-color);
+      border-radius:50px;
+      z-index:999;
+      box-shadow: 0 2px 8px rgba(91, 10, 255, 0.25);
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 }

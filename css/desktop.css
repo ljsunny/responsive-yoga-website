@@ -483,4 +483,7 @@ Footer {
   hr {
     margin: 48px 0;
   }
+  .arrow-up {
+    display:none;
+  }
 }
