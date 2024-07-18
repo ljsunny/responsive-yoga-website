@@ -32,14 +32,23 @@
       input {
         display: none;
 
-        & + label {
-          background-repeat: no-repeat;
-          background-image: url("../assets/LightTheme.png");
+        &.theme {
+          & + label {
+            background-repeat: no-repeat;
+            background-image: url("../assets/LightTheme.png");
+          }
+
+          &:checked + label {
+            background-repeat: no-repeat;
+            background-image: url("../assets/DarkTheme.png");
+          }
         }
 
-        &:checked + label {
-          background-repeat: no-repeat;
-          background-image: url("../assets/DarkTheme.png");
+        &.modal {
+          & + label {
+            background-repeat: no-repeat;
+            background-image: url("../assets/LightHamburger.svg");
+          }
         }
       }
 
@@ -49,6 +58,10 @@
         width: 24px;
         height: 24px;
       }
+    }
+
+    .mobile {
+      display: none;
     }
   }
 }
@@ -324,7 +337,7 @@
   }
   .yoga-txt-container {
     margin: 0 auto;
-    padding-top:96px;
+    padding-top: 96px;
     text-align: center;
     max-width: 600px;
 
@@ -347,11 +360,10 @@
     position: relative;
     max-width: 1060px;
     margin: 0 auto;
-    height:821px;
-
+    height: 821px;
 
     .yoga-img-wrap {
-      position:absolute;
+      position: absolute;
       border-radius: 192px;
       border: 10px solid var(--container-dark);
     }
@@ -363,15 +375,15 @@
       background-size: cover;
     }
     .yoga-img-wrap:nth-child(2) {
-      right:0;
+      right: 0;
       width: 280px;
       height: 420px;
       background-image: url("../assets/follow-yoga-2.png");
       background-size: cover;
     }
     .yoga-img-wrap:nth-child(3) {
-      bottom:20px;
-      left:0;
+      bottom: 20px;
+      left: 0;
       width: 500px;
       height: 255.58px;
       background-image: url("../assets/follow-yoga-3.png");
@@ -379,8 +391,8 @@
       transform: rotate(15deg);
     }
     .yoga-img-wrap:nth-child(4) {
-      bottom:20px;
-      right:0;
+      bottom: 20px;
+      right: 0;
       width: 500px;
       height: 255.58px;
       background-image: url("../assets/follow-yoga-4.png");
@@ -485,5 +497,36 @@ Footer {
   }
   .arrow-up {
     display:none;
+  }
+}
+
+.modal-wrapper {
+  z-index: 9999;
+
+  position: absolute;
+  top: 0;
+  left: 100vw;
+
+  display: none;
+  flex-direction: column;
+  gap: 48px;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 16px 24px;
+
+  background-color: #7d7d7d;
+
+  .in-modal-class {
+    background-repeat: no-repeat;
+    background-image: url("../assets/LightClose.svg");
+
+    margin-left: auto;
+  }
+
+  #modal-home {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
