@@ -531,7 +531,7 @@ Footer {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 1165px) {
   .header,
   main {
     margin: 0 24px;
@@ -576,6 +576,8 @@ Footer {
     }
 
     p {
+      position: relative;
+
       text-align: center;
     }
 
@@ -602,8 +604,8 @@ Footer {
     }
 
     .star-img {
-      right: 260px;
-      top: 130px;
+      left: -20px;
+      top: -30px;
       width: 50px;
     }
 
